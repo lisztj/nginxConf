@@ -14,9 +14,9 @@ RUN apt-get update && \
 RUN ln -sf /logs /var/log/nginx/access.log
 RUN ln -sf /logs /var/log/nginx/error.log
 # RUN rm -fv /usr/local/nginx/conf/nginx.conf
-COPY /conf/nginx.conf /usr/local/nginx/conf/nginx.conf
-# RUN ln -F /conf /usr/local/conf/nginx.conf
-RUN docker run -v /conf:/usr/local/conf
+# COPY /conf/nginx.conf /usr/local/nginx/conf/nginx.conf
+RUN ln -s /conf /etc/nginx/conf.d
+
 EXPOSE 80
 COPY /www/*  /usr/share/nginx/html
 
