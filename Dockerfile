@@ -19,8 +19,8 @@ RUN ln -sf /logs /var/log/nginx/access.log
 RUN ln -sf /logs /var/log/nginx/error.log
 # RUN rm -fv /usr/local/nginx/conf/nginx.conf
 
-# COPY /conf/nginx.conf /etc/nginx/nginx.conf
-# COPY /conf/default.conf /etc/nginx/conf.d/default.conf
+COPY /conf/nginx.conf /etc/nginx/nginx.conf
+COPY /conf/default.conf /etc/nginx/conf.d/default.conf
 
 # RUN ln -sf /conf /etc/nginx/nginx.conf
 # docker run --name nginxxx -i -t -v //c/Users/pablodocs/www/a-examplec:/www -d -p 80:80 nginxx
