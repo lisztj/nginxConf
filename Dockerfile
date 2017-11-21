@@ -78,7 +78,7 @@ COPY /conf/default.conf /etc/nginx/conf.d/default.conf
 # docker run --name nginxxx -i -t -v //c/Users/pablodocs/www/a-examplec:/www -d -p 80:80 nginxx
 EXPOSE 80
 
-# WORKDIR /www
+WORKDIR /www
 
 COPY /www/*  /usr/share/nginx/html
 
