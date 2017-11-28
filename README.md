@@ -17,4 +17,6 @@ run： docker run -p 88:80 -v $PWD/conf/nginx.conf:/etc/nginx/nginx.conf -v $PWD
 
 查看容器或image底层信息 docker inspect 容器id或镜像id
 
-进入容器 docker attach 容器id
+进入容器 docker exec -it 7137e84e1213b0a217a38e6e9daf85cbc6fbcc77e28943dbf720ba8c34820c4c /bin/sh
+
+docker attach 容器id
