@@ -8,3 +8,7 @@ run： docker run -p 88:80 -v $PWD/conf/nginx.conf:/etc/nginx/nginx.conf -v $PWD
 查看容器 docker ps -a
 
 查看镜像 docker images
+
+启动容器 docker start 容器id
+
+重启容器 docker restart 容器id
