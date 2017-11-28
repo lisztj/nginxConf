@@ -3,7 +3,7 @@ nginxconf
 
 build: docker build -t imagesName . //最后的点是构建当前目录下
 
-run： docker run -p 88:80 -v $PWD/conf/nginx.conf:/etc/nginx/nginx.conf -v $PWD/conf/default.conf:/etc/nginx/conf.d/default.conf -d imagesName
+run： docker run -p 88:80 -v $PWD/conf/nginx.conf:/etc/nginx/nginx.conf -v $PWD/conf/default.conf:/etc/nginx/conf.d/default.conf -v $PWD/www:/usr/share/nginx/html -d imagesName //启动容器运行镜像并挂载相应目录
 
 查看容器 docker ps -a
 
