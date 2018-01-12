@@ -1,5 +1,5 @@
-# nginxConf
-nginxconf
+# dockerfile构建nginx服务器配置缓存过期
+NginxConf
 
 build: docker build -t imagesName . //最后的点是构建当前目录下
 
