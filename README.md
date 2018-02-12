@@ -1,5 +1,5 @@
-# dockerfile构建nginx服务器配置缓存过期
-NginxConf
+# :whale:dockerfile构建nginx服务器配置缓存过期
+:cop:NginxConf
 
 build: docker build -t imagesName . //最后的点是构建当前目录下
 
